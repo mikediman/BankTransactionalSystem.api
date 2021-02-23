@@ -166,6 +166,7 @@ namespace BankTransactionalSystem.Implementation
             limit.TransactionCategory = wrapper.request.TransactionType;
             limit.LimitId = Guid.NewGuid();
             limit.TransactionDate = DateTimeOffset.Now.Date;
+            limit.Amount = wrapper.request.Amount;
             return limit;
         }
 

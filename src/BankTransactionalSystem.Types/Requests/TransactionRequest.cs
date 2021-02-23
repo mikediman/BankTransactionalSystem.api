@@ -17,7 +17,7 @@ namespace BankTransactionalSystem.Types.Requests
 
         [DataMember(Name = "amount")]
         [JsonPropertyName("amount")]
-        public string Amount { get; set; }
+        public decimal Amount { get; set; }
 
         [DataMember(Name = "transactionDate")]
         [JsonPropertyName("transactionDate")]
