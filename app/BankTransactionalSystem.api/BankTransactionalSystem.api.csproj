@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\BankTransactionalSystem.Controllers\BankTransactionalSystem.Controllers.csproj" />
+    <ProjectReference Include="..\..\src\BankTransactionalSystem.Implementation\BankTransactionalSystem.Implementation.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using BankTransactionalSystem.Implementation.ServiceExtensios;
+
 namespace BankTransactionalSystem.api
 {
     public class Startup
@@ -17,7 +19,7 @@ namespace BankTransactionalSystem.api
 
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddAppServices(Configuration);
             services.AddControllers();
         }
       
