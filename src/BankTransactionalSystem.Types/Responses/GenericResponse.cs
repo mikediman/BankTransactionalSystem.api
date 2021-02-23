@@ -3,10 +3,11 @@ using System.Text.Json.Serialization;
 
 namespace BankTransactionalSystem.Types.Responses
 {
-    public class CreateCardResponse
+    [DataContract]
+    public class GenericResponse
     {
         [DataMember(Name = "isCreated")]
         [JsonPropertyName("isCreated")]
-        public bool IsRegistered { get; set; }
+        public bool isCreated { get; set; }
     }
 }

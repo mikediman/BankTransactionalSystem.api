@@ -6,7 +6,7 @@ namespace BankTransactionalSystem.Implementation.Config.Extensions
     {
         public static AppConfig ReadAppConfiguration(this IConfiguration @this)
         {
-            var connectionString = @this.GetConnectionString("TinyBankDb");
+            var connectionString = @this.GetConnectionString("TransactionalSystemDb");
 
             return new AppConfig()
             {

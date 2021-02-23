@@ -15,6 +15,10 @@ namespace BankTransactionalSystem.Implementation.Database
             modelBuilder.Entity<Card>()
                 .ToTable("Card");
 
+            modelBuilder.Entity<Card>()
+                .HasIndex(c => c.CardOwner)
+                .IsUnique();
+
             modelBuilder.Entity<Limit>()
                 .ToTable("Limit");
         }

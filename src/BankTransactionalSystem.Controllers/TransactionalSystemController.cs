@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using BankTransactionalSystem.Interfaces;
 using BankTransactionalSystem.Types.Requests;
 using BankTransactionalSystem.Types.Responses;
+using BankTransactionalSystem.Types.Result;
 
 namespace BankTransactionalSystem.Controllers
 {
@@ -23,9 +24,23 @@ namespace BankTransactionalSystem.Controllers
         }
 
         [HttpPost("createCard")]
-        public async Task<ActionResult<CreateCardResponse>> CreateCardAsync(GenericRequest request)
+        public async Task<Result<GenericResponse>> CreateCardAsync(GenericRequest request)
         {
             var result = await cardsService.CreateCardSrvAsync(request);
+            return result;
+        }
+
+        [HttpPost("transaction")]
+        public async Task<Result<GenericResponse>> TransactionAsync(TransactionRequest request)
+        {
+            var result = await cardsService.TransactionSrvAsync(request);
+            return result;
+        }
+
+        [HttpPost("getBalance")]
+        public async Task<Result<GetBalanceResponse>> GetBalanceAsync(GetBalanceRequest request)
+        {
+            var result = await cardsService.GetBalanceSrvAsync(request);
             return result;
         }
     }
