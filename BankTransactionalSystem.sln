@@ -9,20 +9,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTransactionalSystem.api
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{20B8FDF5-51BB-4B9A-92FC-D378848FF0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTransactionalSystem.Controllers", "src\BankTransactionalSystem.Controllers\BankTransactionalSystem.Controllers.csproj", "{73E5FB97-DC4D-48FA-94FB-03ACBF7C9229}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTransactionalSystem.Controllers", "src\BankTransactionalSystem.Controllers\BankTransactionalSystem.Controllers.csproj", "{73E5FB97-DC4D-48FA-94FB-03ACBF7C9229}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTransactionalSystem.Implementation", "src\BankTransactionalSystem.Implementation\BankTransactionalSystem.Implementation.csproj", "{1722F59D-7F67-4D8E-A4D3-4739717397EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTransactionalSystem.Implementation", "src\BankTransactionalSystem.Implementation\BankTransactionalSystem.Implementation.csproj", "{1722F59D-7F67-4D8E-A4D3-4739717397EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTransactionalSystem.Interfaces", "src\BankTransactionalSystem.Interfaces\BankTransactionalSystem.Interfaces.csproj", "{576B4E0E-0369-4790-A780-91753F3E783A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTransactionalSystem.Interfaces", "src\BankTransactionalSystem.Interfaces\BankTransactionalSystem.Interfaces.csproj", "{576B4E0E-0369-4790-A780-91753F3E783A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTransactionalSystem.Types", "src\BankTransactionalSystem.Types\BankTransactionalSystem.Types.csproj", "{C9B486E8-DAF6-4AD1-BF65-A1937006C30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTransactionalSystem.Types", "src\BankTransactionalSystem.Types\BankTransactionalSystem.Types.csproj", "{C9B486E8-DAF6-4AD1-BF65-A1937006C30A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A57F998E-5CC5-4B61-98C3-C71DE3673157}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTransactionalSystem.Tests", "tests\BankTransactionalSystem.Tests\BankTransactionalSystem.Tests.csproj", "{3566A699-8185-42A4-8F31-E508D4AEC678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankTransactionalSystem.Tests", "tests\BankTransactionalSystem.Tests\BankTransactionalSystem.Tests.csproj", "{3566A699-8185-42A4-8F31-E508D4AEC678}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solutionItems", "solutionItems", "{E37B2AD5-E74B-4A49-ACCB-8FBC213B697A}"
 	ProjectSection(SolutionItems) = preProject
+		solutionItems\BankTransactionalSystem.api.postman_collection v0.1 = solutionItems\BankTransactionalSystem.api.postman_collection v0.1
 		README.md = README.md
 	EndProjectSection
 EndProject

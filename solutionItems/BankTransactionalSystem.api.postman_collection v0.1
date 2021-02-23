@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "5bb8e936-c02e-4bc4-87bd-90ca75e8ceaa",
+		"name": "BankTransactionalSystem.api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TransactionalSystemController",
+			"item": [
+				{
+					"name": "createCard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"mikediman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/TransactionalSystem/createCard",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"TransactionalSystem",
+								"createCard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"mikediman\",\r\n    \"transactionType\": \"1\",\r\n    \"amount\": \"200\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/TransactionalSystem/transaction",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"TransactionalSystem",
+								"transaction"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBalance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"mikediman\",\r\n    \"cardNumber\": \"1234567891234567\",\r\n    \"transactionType\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/TransactionalSystem/getBalance",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"TransactionalSystem",
+								"getBalance"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HealthCheckController",
+			"item": [
+				{
+					"name": "healthCheck",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Add your name, and test the api!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:5001/healthCheck/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"healthCheck",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

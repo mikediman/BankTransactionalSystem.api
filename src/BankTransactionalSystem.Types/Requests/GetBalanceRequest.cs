@@ -10,10 +10,6 @@ namespace BankTransactionalSystem.Types.Requests
         [JsonPropertyName("cardNumber")]
         public string CardNumber { get; set; }
 
-        [DataMember(Name = "amount")]
-        [JsonPropertyName("amount")]
-        public string Amount { get; set; }
-
         [DataMember(Name = "transactionType")]
         [JsonPropertyName("transactionType")]
         public string TransactionType { get; set; }
