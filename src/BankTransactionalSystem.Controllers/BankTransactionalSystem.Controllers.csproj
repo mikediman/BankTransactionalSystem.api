@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BankTransactionalSystem.Interfaces\BankTransactionalSystem.Interfaces.csproj" />
     <ProjectReference Include="..\BankTransactionalSystem.Types\BankTransactionalSystem.Types.csproj" />
   </ItemGroup>
 
